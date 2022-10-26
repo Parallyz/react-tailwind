@@ -1,0 +1,6 @@
+.dark__test {
+   @apply text-green-300;
+   &.dark {
+      @apply text-red-700;
+   }
+}

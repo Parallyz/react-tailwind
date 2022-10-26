@@ -1,0 +1,20 @@
+.text {
+   @apply text-4xl  text-red-400 transition-all
+    animate-fade font-lato;
+
+   //&:hover {
+   //   @apply text-sm;
+   //}
+   //&::before {
+   //   content: "sssSS";
+   //   @apply text-5xl;
+   //}
+}
+
+.container {
+   @apply font-medium text-4xl font-kanit dark:bg-slate-400;
+
+   .button__primary {
+      @apply btn-primary text-shadow font-lato;
+   }
+}
