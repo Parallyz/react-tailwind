@@ -3,7 +3,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   //? Which files tailwind work
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-
+  important: true,
   //? Enable dark mode by class (need to add class light or dark to html tag)
   darkMode: "class",
 
@@ -12,7 +12,21 @@ module.exports = {
     //colors: {},
     extend: {
       //? Add
-
+      container: {
+        //? Default center container
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
+      backgroundImage: {
+        first: "url('./src/assets/img/first.jpg')",
+        second: "url('./src/assets/img/second.jpg')",
+      },
       spacing: {
         //? Add m-0.5 p-0.5 ....
         0.5: "0.12rem",
@@ -72,6 +86,9 @@ module.exports = {
           "&:hover": {
             color: "red",
           },
+        },
+        ".border-table": {
+          border: "1px solid red",
         },
       });
       //?For small styles

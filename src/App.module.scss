@@ -10,11 +10,14 @@
    //   @apply text-5xl;
    //}
 }
+.main {
+   @apply font-medium transition-colors
+     font-kanit min-h-screen  mx-auto bg-slate-400;
+   .my__container {
+      @apply container;
 
-.container {
-   @apply font-medium text-4xl font-kanit dark:bg-slate-400;
-
-   .button__primary {
-      @apply btn-primary text-shadow font-lato;
+      .button__primary {
+         @apply btn-primary text-shadow font-lato;
+      }
    }
 }

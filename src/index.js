@@ -1,4 +1,5 @@
 import "./assets/css/index.css";
+import "./assets/scss/main.scss";
 
 import App from "./App";
 import React from "react";

@@ -1,0 +1,16 @@
+.card {
+   &__container {
+      @apply flex flex-wrap gap-2;
+   }
+
+   &__item {
+      @apply flex flex-col p-2 bg-zinc-700 rounded-lg;
+
+      .img {
+         @apply h-[200px] w-80 object-cover;
+      }
+      .title {
+         @apply flex-1 text-center text-3xl transition-colors  text-green-400 dark:text-red-800;
+      }
+   }
+}
