@@ -1,2 +1,7 @@
+@import "./nullable.scss";
 @import "./dark.scss";
 @import "./components/button.scss";
+
+body {
+   @apply bg-secondaryWhite;
+}

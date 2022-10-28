@@ -5,7 +5,7 @@ import { Switch } from "@headlessui/react";
 
 //import styles from "./DarkMode.module.scss";
 
-export default function DarkMode() {
+export default function DarkModeSwitch() {
   const [darkMode, setDarkMode] = useState(() => {
     return ifDarkTheme();
   });

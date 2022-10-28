@@ -1,9 +1,11 @@
-import DarkMode from "./components/checkbox/DarkMode";
+import Header from "./components/blocks/Header";
+import Main from "./components/blocks/Main";
 
 function App() {
   return (
     <>
-      <DarkMode />
+      <Header />
+      <Main />
     </>
   );
 }

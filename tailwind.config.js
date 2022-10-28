@@ -2,24 +2,24 @@
 module.exports = {
   //? Which files tailwind work
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  important: true,
 
   darkMode: "class",
 
   theme: {
+    container: {
+      //? Default center container
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1rem", //16px
+        lg: "1.25rem", //20px
+        xl: "2.5rem", //40px
+        xxl: "150px",
+      },
+    },
     extend: {
       //? Add
-      container: {
-        //? Default center container
-        center: true,
-        padding: {
-          DEFAULT: "1rem",
-          sm: "1rem", //16px
-          lg: "1.25rem", //20px
-          xl: "2.5rem", //40px
-          xxl: "150px",
-        },
-      },
+
       backgroundImage: {
         chair: "url('./src/assets/img/bg-armchair.png')",
       },
