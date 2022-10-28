@@ -1,0 +1,9 @@
+.btn {
+   @apply px-xxl py-sm font-openSans text-lg md:text-2xl rounded-r-sm;
+   &__primary {
+      @apply bg-subPrimaryColor text-white;
+   }
+   &__sub-primary {
+      @apply bg-secondaryGrey text-primaryColor;
+   }
+}

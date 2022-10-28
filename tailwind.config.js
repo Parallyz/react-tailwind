@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require("tailwindcss/plugin");
 module.exports = {
   //? Which files tailwind work
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   important: true,
-  //? Enable dark mode by class (need to add class light or dark to html tag)
+
   darkMode: "class",
 
   theme: {
-    //? Rewrite colors (All tailwind colors will disappear)
-    //colors: {},
     extend: {
       //? Add
       container: {
@@ -17,27 +14,31 @@ module.exports = {
         center: true,
         padding: {
           DEFAULT: "1rem",
-          sm: "2rem",
-          lg: "4rem",
-          xl: "5rem",
-          "2xl": "6rem",
+          sm: "1rem", //16px
+          lg: "1.25rem", //20px
+          xl: "2.5rem", //40px
+          xxl: "150px",
         },
       },
       backgroundImage: {
-        first: "url('./src/assets/img/first.jpg')",
-        second: "url('./src/assets/img/second.jpg')",
+        chair: "url('./src/assets/img/bg-armchair.png')",
       },
       spacing: {
-        //? Add m-0.5 p-0.5 ....
-        0.5: "0.12rem",
+        sm: "1rem",
+        xxl: "3.125rem",
       },
       transformOrigin: {
         DEFAULT: "easy-in-out",
       },
-      //? Rewrite default value
-      transitionDuration: {
-        DEFAULT: "200ms",
+      borderRadius: {
+        vsm: "0.375rem", //6px
+        sm: "0.625rem", //10px
+        md: "1rem", //16px
+        lg: "1.25rem", //20px
+        xl: "1.5rem", //24px
+        xxl: "3.125rem", //50px
       },
+
       colors: {
         primaryColor: "#07484A",
         subPrimaryColor: "#70908B",
@@ -47,23 +48,12 @@ module.exports = {
         secondaryPink: "#EEEBFF",
         secondaryYellow: "#FFF4E7",
         secondaryWhite: "#FDFBF8",
+
+        "skeletonGrey-90": "#ADADAD",
+        "skeletonGrey-80": "#C4C4C4",
+        "skeletonGrey-70": "#D9D9D9",
       },
-      //? Animation
-      keyframes: {
-        //? Name
-        fadeIn: {
-          from: {
-            opacity: 0,
-          },
-          to: {
-            opacity: 1,
-          },
-        },
-      },
-      animation: {
-        //? Add animation
-        fade: "fadeIn 0.3s easy",
-      },
+
       //? import font family from index.css
       fontFamily: {
         //? Import own font from _fonts.css
@@ -75,38 +65,9 @@ module.exports = {
       screen: {
         sm: "576px",
         md: "768px",
-        lg: "992px",
+        lg: "1024px",
       },
     },
   },
-  plugins: [
-    //? From tailwind need npm
-    // require('@tailwind/...')
-
-    //? Custom plugin (import plugin)
-    //? Add style
-    plugin(({ addComponents, theme, addUtilities }) => {
-      addComponents({
-        ".btn-primary": {
-          backgroundColor: theme("colors.orange.500"),
-          color: "green !important",
-          padding: "10px",
-          border: "1px solid black",
-
-          "&:hover": {
-            color: "red",
-          },
-        },
-        ".border-table": {
-          border: "1px solid red",
-        },
-      });
-      //?For small styles
-      addUtilities({
-        ".text-shadow": {
-          textShadow: "10px black",
-        },
-      });
-    }),
-  ],
+  plugins: [],
 };
