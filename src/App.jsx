@@ -1,5 +1,6 @@
 import CardList from "./components/card/CardList";
 import DarkMode from "./components/checkbox/DarkMode";
+import Grid from "./components/grid/Grid";
 import Table from "./components/table/Table";
 import styles from "./App.module.scss";
 
@@ -13,7 +14,8 @@ function App() {
           <DarkMode />
         </div>
         <CardList />
-        <Table/>
+        <Table />
+        <Grid/>
       </div>
     </div>
   );

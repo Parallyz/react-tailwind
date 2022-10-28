@@ -38,7 +38,16 @@ module.exports = {
       transitionDuration: {
         DEFAULT: "200ms",
       },
-      colors: {},
+      colors: {
+        primaryColor: "#07484A",
+        subPrimaryColor: "#70908B",
+
+        secondaryGreen: "#CAF3E5",
+        secondaryGrey: "#E0EFF6",
+        secondaryPink: "#EEEBFF",
+        secondaryYellow: "#FFF4E7",
+        secondaryWhite: "#FDFBF8",
+      },
       //? Animation
       keyframes: {
         //? Name
@@ -57,9 +66,10 @@ module.exports = {
       },
       //? import font family from index.css
       fontFamily: {
-        kanit: ["Kanit", "sans-serif"],
         //? Import own font from _fonts.css
-        lato: ["Lato", "sans-serif"],
+        openSans: ["OpenSans", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        playfairDisplay: ["PlayfairDisplay", "sans-serif"],
       },
       //? Breakpoints
       screen: {

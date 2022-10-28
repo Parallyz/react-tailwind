@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* import  google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
 /* Import styles (own fonts) */
 @import url("./_fonts.css");

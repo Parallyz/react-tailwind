@@ -3,7 +3,7 @@ import { items } from "../../models/items.js";
 
 function Table() {
   return (
-    <table className="w-full">
+    <table className="table-auto w-full">
       <thead>
         <tr>
           <th className="border-table">Image</th>
@@ -24,8 +24,8 @@ function Table() {
                 alt="item"
               />
             </td>
-            <td className="w-1/4">{item.title}</td>
-            <td className="w-1/4">{item.description}</td>
+            <td>{item.title}</td>
+            <td>{item.description}</td>
           </tr>
         ))}
       </tbody>

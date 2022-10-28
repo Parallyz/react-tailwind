@@ -1,6 +1,43 @@
+/* import  google fonts */
+/*@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");*/
+
 /* import own fonts */
 @font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.ttf");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Bold.ttf");
+  font-weight: 700;
 }

@@ -1,6 +1,6 @@
 .text {
    @apply text-4xl  text-red-400 transition-all
-    animate-fade font-lato;
+    animate-fade;
 
    //&:hover {
    //   @apply text-sm;
@@ -12,12 +12,12 @@
 }
 .main {
    @apply font-medium transition-colors
-     font-kanit min-h-screen  mx-auto bg-slate-400;
+     min-h-screen  mx-auto bg-slate-400;
    .my__container {
       @apply container;
 
       .button__primary {
-         @apply btn-primary text-shadow font-lato;
+         @apply btn-primary text-shadow;
       }
    }
 }
