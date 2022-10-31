@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Import styles (own fonts) */
 @import url("./_fonts.css");
 
 /* Import styles */
+
+@layer components {
+  .container {
+    @apply max-w-full;
+  }
+}

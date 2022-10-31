@@ -9,10 +9,12 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        sm: "1rem", //16px
-        lg: "1.25rem", //20px
-        xl: "2.5rem", //40px
-        xxl: "150px",
+        sm: "1rem",
+        md: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        xxl: "5rem",
+        "2xl": "6rem",
       },
     },
     extend: {
@@ -20,25 +22,50 @@ module.exports = {
         chair: "url('./src/assets/img/bg-armchair.png')",
       },
       spacing: {
-        sm: "1rem",
-        xxl: "3.125rem",
-        82: "22rem",
-        12.5: "3.375rem",
+        12: "0.75rem",
+        14: "0.875rem",
+        16: "1rem",
+        20: "1.25rem",
+        24: "1.5rem",
+        32: "2rem",
+        36: "2.25rem",
+        40: "2.5rem",
+        50: "3.125rem",
+        54: "3.375rem",
+        58: "3.625rem",
+        60: "3.75rem",
+        70: "4.375rem",
+        80: "5rem",
+        82: "5.125rem",
+        100: "6.25rem",
+        160: "10rem",
+        104: "6.5rem",
+        109: "6.8125rem",
+        176: "11rem",
+        206: "12.875rem",
       },
 
       fontSize: {
-        xxl: "1.75rem",
+        16: "1rem",
+        18: "1.125rem",
+        20: "1.25rem",
+        24: "1.5rem",
+        28: "1.75rem",
+        36: "2.25rem",
+        48: "3rem",
+        64: "4rem",
+        72: "4.5rem",
       },
       transformOrigin: {
         DEFAULT: "easy-in-out",
       },
       borderRadius: {
-        vsm: "0.375rem", //6px
-        sm: "0.625rem", //10px
-        md: "1rem", //16px
-        lg: "1.25rem", //20px
-        xl: "1.5rem", //24px
-        xxl: "3.125rem", //50px
+        6: "0.375rem", //6px
+        10: "0.625rem", //10px
+        16: "1rem", //16px
+        20: "1.25rem", //20px
+        24: "1.5rem", //24px
+        50: "3.125rem", //50px
       },
 
       colors: {
@@ -71,5 +98,6 @@ module.exports = {
       },
     },
   },
+
   plugins: [],
 };

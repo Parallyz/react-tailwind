@@ -1,12 +1,9 @@
 .switch {
    &__container {
-      @apply relative inline-flex h-[30px] w-[60px] p-0.5
+      @apply relative inline-flex h-[30px] w-[62px] p-0.5
       shrink-0 cursor-pointer rounded-full border-2 
       border-transparent transition-colors duration-200 
       ease-in-out bg-secondaryGrey dark:bg-secondaryGreen;
-      &:hover {
-         @apply text-violet-600;
-      }
 
       &:focus {
          @apply outline-none;
