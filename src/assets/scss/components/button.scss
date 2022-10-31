@@ -1,5 +1,5 @@
 .btn {
-   @apply px-xxl py-sm font-openSans text-lg md:text-2xl rounded-r-sm;
+   @apply px-xxl py-sm font-openSans text-lg md:text-2xl rounded-sm;
    &__primary {
       @apply bg-subPrimaryColor text-white;
    }

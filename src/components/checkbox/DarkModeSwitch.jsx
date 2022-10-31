@@ -31,12 +31,12 @@ export default function DarkModeSwitch() {
         <Switch
           checked={darkMode}
           onChange={setDarkMode}
-          className="switch__container dark:bg-white"
+          className="switch__container "
         >
           <span
             aria-hidden="true"
             className={`${darkMode ? "translate-x-9" : "translate-x-0"}
-            switch__circle dark:bg-black`}
+            switch__circle `}
           />
         </Switch>
       </>

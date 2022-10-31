@@ -1,0 +1,22 @@
+.switch {
+   &__container {
+      @apply relative inline-flex h-[30px] w-[60px] p-0.5
+      shrink-0 cursor-pointer rounded-full border-2 
+      border-transparent transition-colors duration-200 
+      ease-in-out bg-secondaryGrey dark:bg-secondaryGreen;
+      &:hover {
+         @apply text-violet-600;
+      }
+
+      &:focus {
+         @apply outline-none;
+      }
+      &:focus-visible {
+         @apply ring-opacity-75 ring-2 ring-primaryColor;
+      }
+   }
+   &__circle {
+      @apply pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full
+       bg-primaryColor shadow-lg ring-0 transition duration-200 ease-in-out dark:bg-primaryColor;
+   }
+}

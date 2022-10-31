@@ -1,0 +1,6 @@
+.title {
+   @apply text-primaryColor text-xxl font-bold font-playfairDisplay md:text-5xl;
+   &__main {
+      @apply text-4xl xl:text-6xl;
+   }
+}

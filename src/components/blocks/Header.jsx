@@ -6,14 +6,14 @@ function Header() {
   return (
     <header className="container z-10 absolute left-[50%] translate-x-[-50%] py-[1.625rem] flex justify-between items-center">
       <div className="order-1 lg:order-2">
-        <button className="block lg:hidden ">
+        <button className="block xl:hidden ">
           <img
             src={Icons.Burger}
             className="w-6 h-6 md:w-8 md:h-8"
             alt="burger"
           />
         </button>
-        <nav className="hidden lg:block">
+        <nav className="hidden xl:block">
           <ul className="flex space-x-5 font-playfairDisplay text-primaryColor text-xl">
             <li>
               <a href="">Home</a>
@@ -33,17 +33,15 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <button lassName="order-2 lg:order-1">
+      <button className="order-2 lg:order-1">
         <img
           className=" w-[104px] h-[26px] md:w-[144px] md:h-[36px]"
           src={Icons.Logo}
           alt="logo"
         />
       </button>
-      {
-        //<DarkModeSwitch />
-      }
-      <div className="space-x-3  order-3">
+      <div className="space-x-3 md:space-x-12  order-3 flex items-center">
+        <DarkModeSwitch />
         <button>
           <img className="w-7 h-7" src={Icons.Search} alt="search" />
         </button>

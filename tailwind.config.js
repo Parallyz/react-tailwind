@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  //? Which files tailwind work
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-
   darkMode: "class",
 
   theme: {
@@ -18,14 +16,18 @@ module.exports = {
       },
     },
     extend: {
-      //? Add
-
       backgroundImage: {
         chair: "url('./src/assets/img/bg-armchair.png')",
       },
       spacing: {
         sm: "1rem",
         xxl: "3.125rem",
+        82: "22rem",
+        12.5: "3.375rem",
+      },
+
+      fontSize: {
+        xxl: "1.75rem",
       },
       transformOrigin: {
         DEFAULT: "easy-in-out",
